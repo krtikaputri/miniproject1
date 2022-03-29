@@ -1,0 +1,13 @@
+.todo {
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.icon {
+  color: red;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  font-size: 50px;
+}

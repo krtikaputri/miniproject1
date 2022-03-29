@@ -1,0 +1,97 @@
+.Ongoing, .coret {
+  position: relative;
+  height: 45px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(3, 3, 3);
+  padding: 0 10px;
+  padding-left: 60px;
+  margin-bottom: 10px;
+}
+.coret{
+  text-decoration: line-through;
+}
+
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  width: 80px;
+  justify-content: space-between;
+}
+
+.check-list {
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.check-list input {
+  width: 40px;
+  height: 40px;
+  appearance: none;
+  background: #c4c8c3;
+  cursor: pointer;
+}
+
+.check-list input:checked {
+  background: #45c825;
+  color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-list input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-list .checkmark:after {
+  left: 15px;
+  top: 7px;
+  width: 8px;
+  height: 17px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.icons {
+  font-size: 25px;
+}
+
+.delete {
+  color: red;
+}
+
+.edit {
+  color: rgb(17, 50, 235);
+}
+
+.fungsi,
+.option {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+}
